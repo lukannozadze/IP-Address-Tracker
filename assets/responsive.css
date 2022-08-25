@@ -1,0 +1,60 @@
+@media screen and (max-width: 1024px) {
+  .information-box {
+    position: absolute;
+    left: -7rem;
+    top: 19.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .information-box {
+    position: absolute;
+    left: -8rem;
+    top: 19.3rem;
+  }
+  .information-box {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 24rem;
+    position: absolute;
+    left: 9.5rem;
+  }
+  .ip-address-div,
+  .location-div,
+  .timezone-div,
+  .isp-div {
+    align-items: center;
+    border: none;
+  }
+  .value {
+    font-weight: 500;
+  }
+  .txt {
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 7.5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #search-input {
+    width: 25.5rem;
+    font-size: 10px;
+  }
+  .information-box {
+    position: absolute;
+    left: -1px;
+    top: 125px;
+  }
+  .search-container-header {
+    font-size: 2.5rem;
+  }
+  .container {
+    gap: 2rem;
+  }
+}

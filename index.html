@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="search-container">
+      <div class="container">
+        <h1 class="search-container-header">Ip Address Tracker</h1>
+
+        <div class="search-box">
+          <input
+            type="text"
+            value=""
+            placeholder="Search for any IP address or domain"
+            id="search-input"
+          />
+          <div class="search-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="btn-arrow"
+              viewbox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="information-box">
+          <div class="ip-address-div">
+            <span class="txt ip-address-txt">ip address</span>
+            <span class="value ip-address-value">192.212.174.101</span>
+          </div>
+          <div class="location-div">
+            <span class="txt location-txt">location</span>
+            <span class="value location-value">Brooklyn, NY 10001</span>
+          </div>
+          <div class="timezone-div">
+            <span class="txt timezone-txt">timezone</span>
+            <span class="value timezone-value">UTC - 05:00</span>
+          </div>
+          <div class="isp-div">
+            <span class="txt isp-txt">isp</span>
+            <span class="value isp-value">SpaceX Starlink</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+  </body>
+  <script defer src="./assets/script.js"></script>
+</html>
